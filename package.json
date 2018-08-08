@@ -1,0 +1,22 @@
+{
+  "name": "demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "demo.js",
+  "dependencies": {
+    "influxdb-nodejs": "^2.8.0",
+    "koa": "^2.5.2",
+    "koa-router": "^7.4.0",
+    "koa-views": "^6.1.4",
+    "moment": "^2.22.2",
+    "mysql": "^2.16.0",
+    "xlsx": "^0.13.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon demo"
+  },
+  "author": "",
+  "license": "ISC"
+}
