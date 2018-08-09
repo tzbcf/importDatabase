@@ -1,8 +1,9 @@
+'use strict'
 const tool = require("./config");
 
 exports.findWarehouseAll = () => {
     let _sql = `select * from _sys_t_data_warehouse where IDX > 0;`;
-    return tool.queryEhz( _sql )
+    return tool.queryEhz(_sql)
 };
 
 exports.findWarehouseMaxIdx = () =>{
@@ -99,6 +100,7 @@ exports.insertResourceData = (data) => {
     ${data.type},${data.grade},"${data.explain}","${tool.standardCurrDatetime()}",${data.alarmCount},${data.alarmStatistics},${data.icoPath},"${data.templateType}",
     ${data.tplM2LF_x},${data.tplM2LF_y},${data.tplM2LF_width},${data.tplM2LF_height},${data.tplM2LA_frame},
     ${data.tplM2LA_type},"${data.tplM2LE_moduleName}",${data.tplM2LE_mode},${data.templatePrivateDatas});`;
+    console.log("!-------------------",_sql)
     return tool.queryEhzos( _sql )
 };
 
